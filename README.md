@@ -7,6 +7,7 @@
 
 <p></p>
 <h2>Projects</h2>
-<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/140778634" >一.图像分类实现</a><br/>
-<a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/141189496" >二.pth2onnx</a><br/>
+<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/140778634" >一.Classification</a><br/>
+<a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/141189496" >二.Pth2onnx</a><br/>
+<a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/141264876" >三.ObjectDetection_pretrained_model</a><br/>
 
