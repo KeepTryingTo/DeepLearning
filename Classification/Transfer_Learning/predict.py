@@ -14,17 +14,20 @@ from PIL import Image
 
 import config
 from model import Model
+from model_finetune import modelFineTune
 from dataset_v2 import loadTransform
 
 #TODO 加载模型
-model = Model(in_channels=config.IN_CHANNELS,num_classes=config.NUM_CLASSES).to(config.DEVICE)
-weight_path = r'C:\TransferLearning\B站\day1\video_codes\output\best_0.793.pth'
+# model = Model(in_channels=config.IN_CHANNELS,num_classes=config.NUM_CLASSES).to(config.DEVICE)
+model = modelFineTune(num_classes=config.NUM_CLASSES,is_freeze=True,pretrained=True,
+                          model_name='mobilenetv3').to(config.DEVICE)
+weight_path = r'D:\conda3\Transfer_Learning\B站\day1\video_codes\output\best_finetune_0.88_35.pth'
 checkpoint = torch.load(weight_path,map_location='cpu')
 model.load_state_dict(checkpoint['state_dict'])
 
 transform = loadTransform()
 
-img_root = r'C:\TransferLearning\B站\day1\video_codes\images'
+img_root = r'D:\conda3\Transfer_Learning\B站\day1\video_codes\images'
 def predict_imgs():
     for imgName in os.listdir(img_root):
         img_path = os.path.join(img_root,imgName)
@@ -32,6 +35,7 @@ def predict_imgs():
         image = transform(image).unsqueeze(dim = 0).to(config.DEVICE) # [3,224,224] => [1,3,224,224]
 
         output = model(image) #[1,10]
+        # output = output.softmax(dim = 1)
         prediction_index = torch.argmax(output,dim = -1).item()
         print('predict class {}   {:.3f}  name: {}'.format(
             config.index_map_name[prediction_index],output[0][prediction_index],

@@ -27,9 +27,9 @@ def main():
     trainLoader,testLoader = loadDataset()
 
     #TODO load model
-    model = Model(in_channels=config.IN_CHANNELS,num_classes=config.NUM_CLASSES).to(config.DEVICE)
-    # model = modelFineTune(num_classes=config.NUM_CLASSES,is_freeze=True,pretrained=True,
-    #                       model_name='mobilenetv3').to(config.DEVICE)
+    # model = Model(in_channels=config.IN_CHANNELS,num_classes=config.NUM_CLASSES).to(config.DEVICE)
+    model = modelFineTune(num_classes=config.NUM_CLASSES,is_freeze=True,pretrained=True,
+                          model_name='mobilenetv3').to(config.DEVICE)
 
     #TODO define optimizer and loss funcation
     loss_fn = nn.CrossEntropyLoss().to(config.DEVICE)
@@ -65,17 +65,17 @@ def main():
                     'epoch':epoch,
                     'best_acc':best_acc
                 }
-                # torch.save(state_dict,os.path.join(config.OUTPUT,'best_finetune_{}_{}.pth'.format(round(best_acc,3),epoch)))
-                torch.save(state_dict,
-                           os.path.join(config.OUTPUT, 'best_{}_{}.pth'.format(round(best_acc, 3), epoch)))
+                torch.save(state_dict,os.path.join(config.OUTPUT,'best_finetune_{}_{}.pth'.format(round(best_acc,3),epoch)))
+                # torch.save(state_dict,
+                #            os.path.join(config.OUTPUT, 'best_{}_{}.pth'.format(round(best_acc, 3), epoch)))
         epoch_loss.append(train_loss)
         epoch_acc.append(train_acc)
 
     end_time = time.time()
     print('train time is: {}s'.format(end_time - start_time))
-    plot(epoch_loss,mode = "train loss")
-    plot(epoch_acc,mode = "train acc")
-    plot(val_acc,mode = "val acc")
+    plot(epoch_loss,mode = "finetune train loss")
+    plot(epoch_acc,mode = "finetune train acc")
+    plot(val_acc,mode = "finetune val acc")
 
 def train_epoch(model,loss_fn,optimizer,dataloader,epoch):
     total_loss = 0.
@@ -139,7 +139,7 @@ def plot(logs,mode = 'loss'):
     plt.plot(x,logs,color = 'cyan')
     plt.savefig(os.path.join(config.OUTPUT,mode + '.png'))
     # plt.show()
-    plt.legend(mode)
+    plt.legend(labels = mode)
 
 if __name__ == '__main__':
     main()

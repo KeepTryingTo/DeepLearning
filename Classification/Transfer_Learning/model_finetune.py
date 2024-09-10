@@ -55,6 +55,7 @@ class modelFineTune(nn.Module):
 
     def forward(self,x):
         out = self.model(x)
+        out = torch.softmax(out,dim=1)
         return out
 
 if __name__ == '__main__':
