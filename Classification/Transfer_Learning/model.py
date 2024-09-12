@@ -66,6 +66,8 @@ class Model(nn.Module):
 
         self.classifier = nn.Sequential(
             nn.Linear(in_features=128,out_features=64),
+            nn.Hardswish(),
+            nn.Dropout(p=0.2, inplace=True),
             nn.Linear(in_features=64,out_features=num_classes)
         )
 

@@ -11,7 +11,6 @@ from torch import nn
 from torchvision import transforms
 from torchvision.datasets import ImageFolder
 from torch.utils.data import DataLoader,Dataset,random_split
-
 import config
 
 
@@ -41,7 +40,7 @@ def loadDataset():
 
     train_size = int(total_size * 0.8)
     val_size = int(total_size * 0.2)
-    train_dataset,val_dataset = random_split(dataset,[train_size,val_size])
+    train_dataset,val_dataset = random_split(dataset,lengths = [train_size,val_size])
 
     trainLoader = DataLoader(dataset=train_dataset,shuffle=True,batch_size=config.BATCH_SIZE)
     valLoader = DataLoader(dataset=val_dataset,shuffle=False,batch_size=1)

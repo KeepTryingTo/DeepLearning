@@ -16,7 +16,6 @@ import torch
 from torch import nn
 # from dataset import loadDataset
 from dataset_v2 import loadDataset
-from torchvision import models,transforms
 
 from model import Model
 from model_finetune import modelFineTune
@@ -28,12 +27,13 @@ def main():
 
     #TODO load model
     # model = Model(in_channels=config.IN_CHANNELS,num_classes=config.NUM_CLASSES).to(config.DEVICE)
-    model = modelFineTune(num_classes=config.NUM_CLASSES,is_freeze=True,pretrained=True,
+    model = modelFineTune(num_classes=config.NUM_CLASSES,pretrained=config.PRETRAINED,
+                          freeze_layers=config.FREEZE_LAYERS,isFreezeBackbone=config.ISFREEZEBACKBONE,
                           model_name='mobilenetv3').to(config.DEVICE)
 
     #TODO define optimizer and loss funcation
     loss_fn = nn.CrossEntropyLoss().to(config.DEVICE)
-    optimizer = torch.optim.Adam(params=model.parameters(),lr=config.LR)
+    optimizer = torch.optim.Adam(params=filter(lambda p: p.requires_grad, model.parameters()),lr=config.LR)
 
     #TODO load checkpoint model
     if config.RESUME:
@@ -65,17 +65,28 @@ def main():
                     'epoch':epoch,
                     'best_acc':best_acc
                 }
-                torch.save(state_dict,os.path.join(config.OUTPUT,'best_finetune_{}_{}.pth'.format(round(best_acc,3),epoch)))
-                # torch.save(state_dict,
-                #            os.path.join(config.OUTPUT, 'best_{}_{}.pth'.format(round(best_acc, 3), epoch)))
+                # if config.ISFREEZEBACKBONE:
+                #     torch.save(
+                #         state_dict, os.path.join(config.OUTPUT, 'best_finetune_{}_{}.pth'.format(
+                #             round(best_acc, 3), epoch)))
+                # else:
+                #     torch.save(
+                #         state_dict,os.path.join(config.OUTPUT,'best_layers_{}_finetune_{}_{}.pth'.format(
+                #             config.FREEZE_LAYERS,round(best_acc,3),epoch)))
+                torch.save(state_dict,
+                           os.path.join(config.OUTPUT, 'best_p_0.5_nofinetune_{}_{}.pth'.format(round(best_acc, 3), epoch)))
         epoch_loss.append(train_loss)
         epoch_acc.append(train_acc)
 
     end_time = time.time()
     print('train time is: {}s'.format(end_time - start_time))
-    plot(epoch_loss,mode = "finetune train loss")
-    plot(epoch_acc,mode = "finetune train acc")
-    plot(val_acc,mode = "finetune val acc")
+    # plot(epoch_loss,mode = "{} finetune train loss".format(config.FREEZE_LAYERS))
+    # plot(epoch_acc,mode = "{} finetune train acc".format(config.FREEZE_LAYERS))
+    # plot(val_acc,mode = "{} finetune val acc".format(config.FREEZE_LAYERS))
+
+    plot(epoch_loss, mode="p_0.5 nofinetune train loss")
+    plot(epoch_acc, mode="p_0.5 nofinetune train acc")
+    plot(val_acc, mode="p_0.5 nofinetune val acc")
 
 def train_epoch(model,loss_fn,optimizer,dataloader,epoch):
     total_loss = 0.
@@ -141,11 +152,31 @@ def plot(logs,mode = 'loss'):
     # plt.show()
     plt.legend(labels = mode)
 
+def accuracy(output, target, topk=(1,)):
+    """Computes the precision@k for the specified values of k"""
+    if target.numel() == 0:
+        return [torch.zeros([], device=output.device)]
+    maxk = max(topk)
+    batch_size = target.size(0)
+
+    _, pred = output.topk(maxk, 1, True, True)
+    pred = pred.t()
+    correct = pred.eq(target.view(1, -1).expand_as(pred))
+
+    res = []
+    for k in topk:
+        correct_k = correct[:k].view(-1).float().sum(0)
+        res.append(correct_k.mul_(100.0 / batch_size))
+    return res
+
 if __name__ == '__main__':
     main()
     """
-    nofinetune train time is: 4585.734922885895s
-    finetune train time is: 2037.4213635921478s
-    train time is: 1267.1113030910492s
+    p = 0.2 nofinetune train time is: 1859.5014691352844s
+    p = 0.5 nofinetune train time is: 4755.051202535629s
+    layer-5 finetune train time is: 3995.3461089134216s
+    layer-10 finetune train time is: 2576.454952955246s
+    finetune train time is: 753.2307982444763s
+    train time is: 1913.6642224788666s
     """
     pass

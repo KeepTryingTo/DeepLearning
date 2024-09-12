@@ -20,7 +20,9 @@ START_EPOCH = 0
 RESUME = r''
 EVAL_EPOCH = 5
 BEST_ACC = 0.
-
+FREEZE_LAYERS = -1
+PRETRAINED = False
+ISFREEZEBACKBONE = False
 index_map_name = {
     0:'daisy',1:'dandelion',2:'roses',3:'sunflowers',4:'tulips'
 }

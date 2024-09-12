@@ -18,10 +18,10 @@ from model_finetune import modelFineTune
 from dataset_v2 import loadTransform
 
 #TODO 加载模型
-# model = Model(in_channels=config.IN_CHANNELS,num_classes=config.NUM_CLASSES).to(config.DEVICE)
-model = modelFineTune(num_classes=config.NUM_CLASSES,is_freeze=True,pretrained=True,
-                          model_name='mobilenetv3').to(config.DEVICE)
-weight_path = r'D:\conda3\Transfer_Learning\B站\day1\video_codes\output\best_finetune_0.88_35.pth'
+model = Model(in_channels=config.IN_CHANNELS,num_classes=config.NUM_CLASSES).to(config.DEVICE)
+# model = modelFineTune(num_classes=config.NUM_CLASSES,pretrained=False,isFreezeBackbone=False,
+#                       freeze_layers=-1,model_name='mobilenetv3').to(config.DEVICE)
+weight_path = r'D:\conda3\Transfer_Learning\B站\day1\video_codes\output\best_p_0.2_0.638_45.pth'
 checkpoint = torch.load(weight_path,map_location='cpu')
 model.load_state_dict(checkpoint['state_dict'])
 
@@ -29,15 +29,16 @@ transform = loadTransform()
 
 img_root = r'D:\conda3\Transfer_Learning\B站\day1\video_codes\images'
 def predict_imgs():
-    for imgName in os.listdir(img_root):
+    img_list = os.listdir(img_root)
+    img_list = sorted(sorted(img_list, key=lambda x: (len(x), x), reverse=False))
+    for imgName in img_list:
         img_path = os.path.join(img_root,imgName)
-        image = Image.open(img_path)
+        image = Image.open(img_path).convert("RGB")
         image = transform(image).unsqueeze(dim = 0).to(config.DEVICE) # [3,224,224] => [1,3,224,224]
 
-        output = model(image) #[1,10]
-        # output = output.softmax(dim = 1)
+        output = model(image) #[1,5]
         prediction_index = torch.argmax(output,dim = -1).item()
-        print('predict class {}   {:.3f}  name: {}'.format(
+        print('ground truth class {}  predict class {}   {:.3f}  name: {}'.format(imgName.split('.')[0],
             config.index_map_name[prediction_index],output[0][prediction_index],
             config.name[prediction_index]
         ))
