@@ -14,4 +14,5 @@
 <a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/141264876" >三.ObjectDetection_pretrained_model</a><br/>
 <a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/141355068" >四.CrowdCounting-FFNet</a><br/>
 <a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/142053166" >五.Transfer_Learning</a><br/>
+<a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/142208427" >六.modelDeployment_onnx</a><br/>
 
