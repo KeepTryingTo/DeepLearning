@@ -25,7 +25,7 @@ transform = transforms.Compose([
 ])
 
 weights = r'yolov5s.pt'
-device = 'cpu' if torch.cuda.is_available() else 'cpu'
+device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
 data = r'data/coco128.yaml'
 root = r'images'
 img_size = 640
@@ -37,12 +37,9 @@ max_det=100  # maximum detections per image
 model = DetectMultiBackend(weights, device=device, dnn=False, data=data, fp16=False)
 stride, names, pt = model.stride, model.names, model.pt
 
-def convertPT():
-    x = torch.rand(size=(1,3,img_size,img_size))
-    jit_model = torch.jit.script(model,x)
-    optimize_jit_model = optimize_for_mobile(jit_model)
-    optimize_jit_model.save("yolov5s.torchscript")
-    print("convert is finished!")
+def loadTorchScript():
+    jit_model = torch.jit.load("yolov5s.torchscript")
+    return jit_model
 
 def xywh2xyxy(x):
     """Convert nx4 boxes from [x, y, w, h] to [x1, y1, x2, y2] where xy1=top-left, xy2=bottom-right."""
@@ -61,12 +58,12 @@ def onnxDetectImage():
         width, height = im0.size
 
         im = im0.resize(size=(img_size, img_size))
-        im = transform(im).unsqueeze(dim=0).to(device)
+        im = transform(im).unsqueeze(dim=0)
 
         predictions = model(im)
         #[1,25200,85] = [1,25200,xywh + conf + 80]
         print('predictions.shape: {}'.format(predictions[0].shape))
-        pred = np.squeeze(predictions)
+        pred = np.squeeze(predictions[0].numpy())
         boxes = xywh2xyxy(pred[...,:4])
         confidences = pred[...,4]
         cls_prob = pred[...,5:85]
@@ -109,6 +106,5 @@ if __name__ == '__main__':
     # detectImage01()
     # detectImage02()
     # timeDetect()
-    convertPT()
     onnxDetectImage()
     pass
