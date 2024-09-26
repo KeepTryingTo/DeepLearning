@@ -16,7 +16,7 @@ from torchvision import transforms
 from torch.utils.mobile_optimizer import optimize_for_mobile
 
 transform = transforms.Compose([
-    transforms.Resize(size=(config.crop_size,config.crop_size)),
+    # transforms.Resize(size=(config.crop_size,config.crop_size)),
     transforms.ToTensor()
 ])
 
@@ -27,10 +27,10 @@ def pth2pt_f():
     model.eval()
     x = torch.zeros(size=(1,3,320,320))
     #https://blog.csdn.net/q7w8e9r4/article/details/135263015
-    # jit_model = torch.jit.trace(model,x)
-    jit_model = torch.jit.script(model)
-    optimize_jit_model = optimize_for_mobile(jit_model)
+    # jit_model = torch.jit.trace(model,x) #如果使用这个，将会报错
+    jit_model = torch.jit.script(model,x)
 
+    optimize_jit_model = optimize_for_mobile(jit_model)
     optimize_jit_model.save("./onnx/ssdlite320_mobilenet_v3_large.pt")
 
 def out2org(box,crop_size,org_size):
@@ -77,8 +77,9 @@ def drawRectangle(boxes, labels, scores, img_path,threshold):
     # cv2.destroyAllWindows()
 
 
-def detectImage(threshold = 0.5):
+def detectImage(conf_threshold = 0.3):
     model = torch.jit.load("./onnx/ssdlite320_mobilenet_v3_large.pt")
+    model.eval()
     images_list = os.listdir(config.root)
 
     for imgName in images_list:
@@ -90,41 +91,41 @@ def detectImage(threshold = 0.5):
         cv_img = cv2.cvtColor(cv_img,cv2.COLOR_RGB2BGR)
         height,width,_ = cv_img.shape
 
-        image = transform(image).unsqueeze(dim=0).to(config.device)
+        image = transform(image)
         outs = model([image])
         #TODO NMS丢弃那些重叠的框，如果一个置信度最大的框和其他框之间的IoU > iou_threshold，那么就表示重叠并且需要丢弃
-        indexs = nms(boxes=outs[0]['boxes'],scores=outs[0]['scores'],iou_threshold=0.05)
+        indexs = nms(boxes=outs[1][0]['boxes'],scores=outs[1][0]['scores'],iou_threshold=0.5)
         endTime = time.time()
-        print('boxes.shape: {}'.format(outs[0]['boxes'][indexs].shape))
-        print('scores.shape: {}'.format(outs[0]['scores'][indexs].shape))
-        print('labels.shape: {}'.format(outs[0]['labels'][indexs].shape))
+        print('boxes.shape: {}'.format(outs[1][0]['boxes'][indexs].shape))
+        print('scores.shape: {}'.format(outs[1][0]['scores'][indexs].shape))
+        print('labels.shape: {}'.format(outs[1][0]['labels'][indexs].shape))
         print('detect finished {} time is: {}s'.format(imgName,endTime - startTime))
 
-        boxes = outs[0]['boxes'][indexs]
-        scores = outs[0]['scores'][indexs]
-        labels = outs[0]['labels'][indexs]
+        boxes = outs[1][0]['boxes'][indexs]
+        scores = outs[1][0]['scores'][indexs]
+        labels = outs[1][0]['labels'][indexs]
 
         for i in range(boxes.size()[0]):
             box = boxes[i]
             confidence = scores[i]
             label = labels[i]
-            if confidence > threshold:
+            if confidence > conf_threshold:
                 box = [int(box[0]),int(box[1]),int(box[2]),int(box[3])]
 
                 cv2.rectangle(
                     img=cv_img,pt1=(box[0],box[1]),pt2=(box[2],box[3]),
-                    color=(0,255,0),thickness=1
+                    color=(255,0,255),thickness=1
                 )
 
                 text = "{} {}%".format(config.className[int(label.item())],round(confidence.item() * 100,2))
                 cvzone.putTextRect(
-                    img=cv_img,text=text,pos=(box[0],box[1] - 20),scale=1,thickness=1,colorR=(0,255,0),
+                    img=cv_img,text=text,pos=(box[0] + 9,box[1] - 12),scale=0.5,thickness=1,colorR=(0,255,0),
                     font=cv2.FONT_HERSHEY_SIMPLEX
                 )
 
         cv2.imwrite(os.path.join(config.output,imgName),cv_img)
-        cv2.imshow('img',cv_img)
-        cv2.waitKey(0)
+        # cv2.imshow('img',cv_img)
+        # cv2.waitKey(0)
 
     cv2.destroyAllWindows()
 
@@ -148,10 +149,10 @@ def timeDetect(threshold):
         img_Transform = torch.unsqueeze(input=img_transform, dim=0).to(config.device)
 
         detection = model([img_Transform])
-        index = nms(boxes = detection[0]['boxes'],scores=detection[0]['scores'],iou_threshold=0.1)
-        boxes = detection[0]['boxes'][index]
-        labels = detection[0]['labels'][index]
-        scores = detection[0]['scores'][index]
+        index = nms(boxes = detection[1][0]['boxes'],scores=detection[1][0]['scores'],iou_threshold=0.1)
+        boxes = detection[1][0]['boxes'][index]
+        labels = detection[1][0]['labels'][index]
+        scores = detection[1][0]['scores'][index]
 
         # 获取类别概率值
         end_time = time.time()
