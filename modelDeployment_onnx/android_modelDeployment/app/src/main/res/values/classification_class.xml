@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string-array name="classfileName">
-        <item>custom_model</item>
-        <item>mobilenetv3</item>
-    </string-array>
-</resources>
