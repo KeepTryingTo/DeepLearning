@@ -11,7 +11,7 @@
 <p></p>
 <h2>Projects</h2>
 <a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/140778634" >一.Classification</a><br/><p>主要使用PyTorch框架从0开始实现一个完整的图像分类过程，并且该过程可以作为一个图像分类的模版，后期直接在上面添加需要的额外功能；主要是实现MNIST和5种花的分类——<a href = "https://www.bilibili.com/video/BV1E2vMeTEkr/">视频讲解</a></p>
-<a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/141189496" >二.Pth2onnx</a><br/>
+<a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/141189496" >二.Pth2onnx</a><br/><p>将训练分类的模型转换为ONNX中间表示格式——<a href = "https://www.bilibili.com/video/BV1E2vMeTEkr?p=8">视频讲解</a></p>
 <a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/141264876" >三.ObjectDetection_pretrained_model</a><br/>
 <a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/141355068" >四.CrowdCounting-FFNet</a><br/>
 <a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/142053166" >五.Transfer_Learning</a><br/>
