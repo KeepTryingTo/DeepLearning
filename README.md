@@ -26,10 +26,11 @@
 
 <a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/142708948" >八.segmentation modelDeployment</a><br/><p>这里主要是基于前面的Android部署模型的经验，将图像分割模型转换为ONNX部署到Android系统中，并且在博文和视频中我都讲解了如果将图像分割模型转换为torchscript中间表示格式在Android加载会存在很多问题，这些都是给出了问题的，并且最后在小结中还给大家一些建议关于Android中模型的部署——<a href = "https://www.bilibili.com/video/BV1jjsvejEu2?p=5">视频讲解</a></p>
 
-<a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/142730047" >主要对Domain-General Crowd Counting in Unseen Scenarios（DCCUS）论文进行了详解，这篇主要是人群计数领域单域泛化的提出，通过结合额外知识点，相关绘图以及代码对整个论文中所提到的算法实现都是进行了非常详细的讲解，讲解过程中所涉及的参考论文都是一一列举出来的，并且对于人群计数方向和单域泛化的的研究具有很好的价值——<a href = "https://www.bilibili.com/video/BV1N2WHesEPr?p=6">视频讲解</a></p>
+<a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/142730047" >九.Domain-General Crowd Counting in Unseen Scenarios（DCCUS）</a><p>主要对Domain-General Crowd Counting in Unseen Scenarios（DCCUS）论文进行了详解，这篇主要是人群计数领域单域泛化的提出，通过结合额外知识点，相关绘图以及代码对整个论文中所提到的算法实现都是进行了非常详细的讲解，讲解过程中所涉及的参考论文都是一一列举出来的，并且对于人群计数方向和单域泛化的的研究具有很好的价值——<a href = "https://www.bilibili.com/video/BV1N2WHesEPr?p=6">视频讲解</a></p>
 
-<a text-decoration="none" href = "https://github.com/KeepTryingTo/DeepLearning/tree/main/modelDeployment/flask_modelDeployment_onnx" >除了前面针对模型在Android系统中的部署，这里讲解了将模型使用flask框架进行部署，flask后端运行起来之后，，前端页面进行显示，比如点击单张图像，选择置信度阈值以及IOU阈值，选择检测的模型，最后点击检测；最后还实现了实时的检测，让功能看起来更加的完整——<a href = "https://www.bilibili.com/video/BV1jjsvejEu2?p=3">视频讲解</a></p>
+<a text-decoration="none" href = "https://github.com/KeepTryingTo/DeepLearning/tree/main/modelDeployment/flask_modelDeployment_onnx" >十.flask modelDeployment</a><p>除了前面针对模型在Android系统中的部署，这里讲解了将模型使用flask框架进行部署，flask后端运行起来之后，，前端页面进行显示，比如点击单张图像，选择置信度阈值以及IOU阈值，选择检测的模型，最后点击检测；最后还实现了实时的检测，让功能看起来更加的完整——<a href = "https://www.bilibili.com/video/BV1jjsvejEu2?p=3">视频讲解</a></p>
 
-<a text-decoration="none" href = "" >——<a href = "">视频讲解</a></p>
+<a text-decoration="none" href = "" ></a><p>——<a href = "">视频讲解</a></p>
+<a text-decoration="none" href = "" ></a><p>——<a href = "">视频讲解</a></p>
 
 
