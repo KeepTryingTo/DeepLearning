@@ -30,7 +30,7 @@
 
 <a text-decoration="none" href = "https://github.com/KeepTryingTo/DeepLearning/tree/main/modelDeployment/flask_modelDeployment_onnx" >十.flask modelDeployment</a><p>除了前面针对模型在Android系统中的部署，这里讲解了将模型使用flask框架进行部署，flask后端运行起来之后，，前端页面进行显示，比如点击单张图像，选择置信度阈值以及IOU阈值，选择检测的模型，最后点击检测；最后还实现了实时的检测，让功能看起来更加的完整——<a href = "https://www.bilibili.com/video/BV1jjsvejEu2?p=3">视频讲解</a></p>
 
-<a text-decoration="none" href = "" ></a><p>——<a href = "">视频讲解</a></p>
+<a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/142588623" >十一.App_Android_CPP_NCNN</a><p>该项目主要是基于ncnn框架和Android studio对模型进行部署，首先将pytorch训练的模型转换torchscript中间表示格式，然后基于此利用pnnx工具将模型转换为ncnn支持的.nn.bin和.ncnn.param格式；其次对Android studio环境的配置（重点），这个已经在博文中列出了详细的步骤；最后是分类模型和目标检测模型的部署，部署过程涉及的核心点以及应该注意什么，我也在博文中详细讲解了——<a href = "">视频讲解</a></p>
 <a text-decoration="none" href = "" ></a><p>——<a href = "">视频讲解</a></p>
 
 
