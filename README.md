@@ -32,13 +32,13 @@
 
 <a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/142588623" >十一.App_Android_CPP_NCNN</a><p>该项目主要是基于ncnn框架和Android studio对模型进行部署，首先将pytorch训练的模型转换torchscript中间表示格式，然后基于此利用pnnx工具将模型转换为ncnn支持的.nn.bin和.ncnn.param格式；其次对Android studio环境的配置（重点），这个已经在博文中列出了详细的步骤；最后是分类模型和目标检测模型的部署，部署过程涉及的核心点以及应该注意什么，我也在博文中详细讲解了——<a href = "">视频讲解</a></p>
 
-<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/143133438" >论文Distribution Matching for Crowd Counting详解</a><p>其中对论文做了详细的讲解，同时对于其中涉及的原理以及方法，公式的推导都做了相关的讲解，最后对实验部分也做了详细的讲解<a href = "https://www.bilibili.com/video/BV1N2WHesEPr?vd_source=b2eaaddb2c69bf42517a2553af8444ab&p=7&spm_id_from=333.788.videopod.episodes">视频讲解</a></p>
+<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/143133438" >十二.论文Distribution Matching for Crowd Counting详解</a><p>其中对论文做了详细的讲解，同时对于其中涉及的原理以及方法，公式的推导都做了相关的讲解，最后对实验部分也做了详细的讲解<a href = "https://www.bilibili.com/video/BV1N2WHesEPr?vd_source=b2eaaddb2c69bf42517a2553af8444ab&p=7&spm_id_from=333.788.videopod.episodes">--视频讲解。</a></p>
 
 
-<a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/143219789" >论文Distribution Matching for Crowd Counting算法代码讲解</a><p>这部分主要是论文主题算法的实现做了详细的讲解，公式的推导以及sinkhorn算法的迭代过程都做了比较详细的讲解<a href = "https://www.bilibili.com/video/BV1N2WHesEPr?vd_source=b2eaaddb2c69bf42517a2553af8444ab&p=7&spm_id_from=333.788.videopod.episodes">视频讲解</a></p>
+<a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/143219789" >十三.论文Distribution Matching for Crowd Counting算法代码讲解</a><p>这部分主要是论文主题算法的实现做了详细的讲解，公式的推导以及sinkhorn算法的迭代过程都做了比较详细的讲解<a href = "https://www.bilibili.com/video/BV1N2WHesEPr?vd_source=b2eaaddb2c69bf42517a2553af8444ab&p=7&spm_id_from=333.788.videopod.episodes">--视频讲解。</a></p>
 
 
-<a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/143247917" >论文ASSD: Attentive Single Shot Multibox Detector详解（包含代码详解）</a><p>提出ASSD是建立在SSD算法的基础之上，ASSD算法提出的目的在于在特征空间构建相关特征。方法：对于全局相关信息，ASSD提出的方法更加强调在特征图中学习那些有用的区域，同时抑制那些相关的信息（注意力机制：让模型关注有用的区域），从而得到一个可靠的目标检测器。从设计方法上来讲，ASSD的方法设计相比于其他复杂的卷积神经网络的设计更加的简单和有效。
-<a href = "">视频讲解</a></p>
+<a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/143247917" >十四.论文ASSD: Attentive Single Shot Multibox Detector详解（包含代码详解）</a><p>提出ASSD是建立在SSD算法的基础之上，ASSD算法提出的目的在于在特征空间构建相关特征。方法：对于全局相关信息，ASSD提出的方法更加强调在特征图中学习那些有用的区域，同时抑制那些相关的信息（注意力机制：让模型关注有用的区域），从而得到一个可靠的目标检测器。从设计方法上来讲，ASSD的方法设计相比于其他复杂的卷积神经网络的设计更加的简单和有效--
+<a href = "">视频讲解。</a></p>
 
 
