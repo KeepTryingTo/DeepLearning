@@ -41,4 +41,7 @@
 <a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/143247917" >十四.论文ASSD: Attentive Single Shot Multibox Detector详解（包含代码详解）</a><p>提出ASSD是建立在SSD算法的基础之上，ASSD算法提出的目的在于在特征空间构建相关特征。方法：对于全局相关信息，ASSD提出的方法更加强调在特征图中学习那些有用的区域，同时抑制那些相关的信息（注意力机制：让模型关注有用的区域），从而得到一个可靠的目标检测器。从设计方法上来讲，ASSD的方法设计相比于其他复杂的卷积神经网络的设计更加的简单和有效--
 <a href = "">视频讲解。</a></p>
 
+<a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/143270390" >十五.论文Receptive Field Block Net for Accurate and Fast Object Detection详解（包含代码详解）</a><p>提出目的：由于当前的目标检测算法backbone部分依赖于像ResNet101或者其他特征提取模型，但是这些模型会导致整个推理流程变得很慢，实时性达不到。因此，要让目标检测模型能够应用到实际中，一个轻量化的模型是有必要的。但是问题在于实时性和准确率不可兼得，所以，怎么样去衡量速度和准确率是一个很重要的问题。提出方法：受到人类视觉系统感受野的结构启发，提出感受野模块（Receptive Fields Block，RFB），将感受野的偏心和大小考虑在内，从而提升特征的判别性和鲁棒性。最后，基于SSD算法，将RFB模块集成到其中并得到一个不错的效果。
+<a href = "">视频讲解。</a></p>
+
 
