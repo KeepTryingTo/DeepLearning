@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="a692987e-fae8-4b81-b559-bfbdcede171d" name="RFBNet">
+        <fileTransfer accessType="SFTP" host="10.16.8.179" port="8989" sshConfigId="2ba83178-f926-4d36-b9ae-b3e3ae873e19" sshConfig="ff@10.16.8.179:8989 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
