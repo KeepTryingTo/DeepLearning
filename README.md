@@ -44,4 +44,15 @@
 <a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/143270390" >十五.论文Receptive Field Block Net for Accurate and Fast Object Detection详解（包含代码详解）</a><p>提出目的：由于当前的目标检测算法backbone部分依赖于像ResNet101或者其他特征提取模型，但是这些模型会导致整个推理流程变得很慢，实时性达不到。因此，要让目标检测模型能够应用到实际中，一个轻量化的模型是有必要的。但是问题在于实时性和准确率不可兼得，所以，怎么样去衡量速度和准确率是一个很重要的问题。提出方法：受到人类视觉系统感受野的结构启发，提出感受野模块（Receptive Fields Block，RFB），将感受野的偏心和大小考虑在内，从而提升特征的判别性和鲁棒性。最后，基于SSD算法，将RFB模块集成到其中并得到一个不错的效果。
 <a href = "">视频讲解。</a></p>
 
+<a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/143313665" >十六.论文Feature-Fused SSD: Fast Detection for Small Objects 详解（包括代码详解）</a><p>提出目的：在有限的图像分辨率和包含有限信息的情况下，检测图像或者视频中的小目标是具有很大的挑战，但是大量的方法中都是以牺牲速度来提升精度。为了快速检测小目标，同时保持精度不下降是本文主要的目的。提出方法：基于SSD目标检测算法，提出了多层特征融合的方法，目的在于融合上下文信息。为了提升检测小目标的精度，本文设计了两个特征融合模块，其中融合操作包含拼接和逐元素求和，这两种方法对于最终的检测效果有所区别--<a href = "">视频讲解。</a></p>
+
+<a text-decoration="none" href = "" >十七.论文FSSD: Feature Fusion Single Shot Multibox Detector详解（代码详解）</a><p>提出目的：作者认为最初的SSD算法特征金字塔检测算法不能很好的融合不同尺度的特征，因此FSSD提出了新的特征融合方式，从而提升原有的SSD性能。提出方法：FSSD基于SSD算法提出一种新的特征融合方法，并且速度上只有一点下降，相比于检测准确率的提升是值得的。具体的方法是：对不同层不同尺度的特征进行拼接，随后通过下采样得到新的特征金字塔，最后的输出层具有不同感受野大小，分别用于检测不同尺度的物体--<a href = "">视频讲解。</a></p>
+
+<a text-decoration="none" href = "" ></a><p>
+<a href = "">视频讲解。</a></p>
+
+<a text-decoration="none" href = "" ></a><p>
+<a href = "">视频讲解。</a></p>
+
+
 
