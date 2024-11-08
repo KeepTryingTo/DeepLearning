@@ -39,29 +39,29 @@
 
 
 <a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/143247917" >十四.论文ASSD: Attentive Single Shot Multibox Detector详解（包含代码详解）</a><p>提出ASSD是建立在SSD算法的基础之上，ASSD算法提出的目的在于在特征空间构建相关特征。方法：对于全局相关信息，ASSD提出的方法更加强调在特征图中学习那些有用的区域，同时抑制那些相关的信息（注意力机制：让模型关注有用的区域），从而得到一个可靠的目标检测器。从设计方法上来讲，ASSD的方法设计相比于其他复杂的卷积神经网络的设计更加的简单和有效--
-<a href = "">视频讲解。</a></p>
+<a href = "https://www.bilibili.com/video/BV1YBeGeNEtX/?vd_source=b2eaaddb2c69bf42517a2553af8444ab">视频讲解。</a></p>
 
 <a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/143270390" >十五.论文Receptive Field Block Net for Accurate and Fast Object Detection详解（包含代码详解）</a><p>提出目的：由于当前的目标检测算法backbone部分依赖于像ResNet101或者其他特征提取模型，但是这些模型会导致整个推理流程变得很慢，实时性达不到。因此，要让目标检测模型能够应用到实际中，一个轻量化的模型是有必要的。但是问题在于实时性和准确率不可兼得，所以，怎么样去衡量速度和准确率是一个很重要的问题。提出方法：受到人类视觉系统感受野的结构启发，提出感受野模块（Receptive Fields Block，RFB），将感受野的偏心和大小考虑在内，从而提升特征的判别性和鲁棒性。最后，基于SSD算法，将RFB模块集成到其中并得到一个不错的效果。
-<a href = "">视频讲解。</a></p>
+<a href = "https://www.bilibili.com/video/BV1YBeGeNEtX/?vd_source=b2eaaddb2c69bf42517a2553af8444ab">视频讲解。</a></p>
 
-<a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/143313665" >十六.论文Feature-Fused SSD: Fast Detection for Small Objects 详解（包括代码详解）</a><p>提出目的：在有限的图像分辨率和包含有限信息的情况下，检测图像或者视频中的小目标是具有很大的挑战，但是大量的方法中都是以牺牲速度来提升精度。为了快速检测小目标，同时保持精度不下降是本文主要的目的。提出方法：基于SSD目标检测算法，提出了多层特征融合的方法，目的在于融合上下文信息。为了提升检测小目标的精度，本文设计了两个特征融合模块，其中融合操作包含拼接和逐元素求和，这两种方法对于最终的检测效果有所区别--<a href = "">视频讲解。</a></p>
+<a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/143313665" >十六.论文Feature-Fused SSD: Fast Detection for Small Objects 详解（包括代码详解）</a><p>提出目的：在有限的图像分辨率和包含有限信息的情况下，检测图像或者视频中的小目标是具有很大的挑战，但是大量的方法中都是以牺牲速度来提升精度。为了快速检测小目标，同时保持精度不下降是本文主要的目的。提出方法：基于SSD目标检测算法，提出了多层特征融合的方法，目的在于融合上下文信息。为了提升检测小目标的精度，本文设计了两个特征融合模块，其中融合操作包含拼接和逐元素求和，这两种方法对于最终的检测效果有所区别--<a href = "https://www.bilibili.com/video/BV1YBeGeNEtX/?vd_source=b2eaaddb2c69bf42517a2553af8444ab">视频讲解。</a></p>
 
-<a text-decoration="none" href = "" >十七.论文FSSD: Feature Fusion Single Shot Multibox Detector详解（代码详解）</a><p>提出目的：作者认为最初的SSD算法特征金字塔检测算法不能很好的融合不同尺度的特征，因此FSSD提出了新的特征融合方式，从而提升原有的SSD性能。提出方法：FSSD基于SSD算法提出一种新的特征融合方法，并且速度上只有一点下降，相比于检测准确率的提升是值得的。具体的方法是：对不同层不同尺度的特征进行拼接，随后通过下采样得到新的特征金字塔，最后的输出层具有不同感受野大小，分别用于检测不同尺度的物体--<a href = "">视频讲解。</a></p>
+<a text-decoration="none" href = "" >十七.论文FSSD: Feature Fusion Single Shot Multibox Detector详解（代码详解）</a><p>提出目的：作者认为最初的SSD算法特征金字塔检测算法不能很好的融合不同尺度的特征，因此FSSD提出了新的特征融合方式，从而提升原有的SSD性能。提出方法：FSSD基于SSD算法提出一种新的特征融合方法，并且速度上只有一点下降，相比于检测准确率的提升是值得的。具体的方法是：对不同层不同尺度的特征进行拼接，随后通过下采样得到新的特征金字塔，最后的输出层具有不同感受野大小，分别用于检测不同尺度的物体--<a href = "https://www.bilibili.com/video/BV1YBeGeNEtX/?vd_source=b2eaaddb2c69bf42517a2553af8444ab">视频讲解。</a></p>
 
 <a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/143603094" >十八.ISSD算法详解</a><p>提出目的：虽然SSD算法已经很快了，但是在精度上和最好的精度相比还是具有一定的差距，因此针对这个问题特别提出了ISSD。提出方法：本文基于SSD算法的基础来进行改进，在不影响速度的情况下提高模型的精度，使用比较常用的Inception模块代替SSD中的部分模块，同时整体模型架构在不增加原有模型复杂度的同时，也增加了性能，其中在模块中采用了BN和残差结构（弥补信息的丢失，防止梯度消失）；最后还提升了NMS算法，克服了模型表达能力的缺陷--
-<a href = "">视频讲解。</a></p>
+<a href = "https://www.bilibili.com/video/BV1YBeGeNEtX/?vd_source=b2eaaddb2c69bf42517a2553af8444ab">视频讲解。</a></p>
 
 <a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/143461579" >十九.DSSD算法详解</a><p>提出目的：作者认为原始的SSD算法在head层包含的上下文信息不足，并且如果直接在深层（head层）添加卷积操作操作以达到增加上下文信息不是那么容易的，简单的设计很容易失败。提出方法：基于原始的SSD算法 + Residual101 + 反卷积（上采样）层将增加更多的上下文信息，同时提升算法检测物体的效果，特别是小目标的检测。具体方法是通过在backbone的输出层并且进行上采样之后逐元素相乘最后通过head层，每一层输出都是这样（类似对称的encoder-decoder）--
-<a href = "">视频讲解。</a></p>
+<a href = "https://www.bilibili.com/video/BV1YBeGeNEtX/?vd_source=b2eaaddb2c69bf42517a2553af8444ab">视频讲解。</a></p>
 
 <a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/143495883" >二十.GIOU算法详解</a><p>提出目的：目标检测算法中IOU常用于评估定位框的预测效果，但是直接使用IOU作为预测框回归距离的评估并最大化评估值存在一定的问题，在二维的预测坐标框回归中，IOU可以作为其回归损失优化，但是IOU面对预测框和真实框之间没有重叠的情况时会出现停止更新，因为真实框和预测框之间没有重叠就代表IOU为0，梯度无法更新。提出方法：本文为了解决预测框和真实框之间没有重叠的情况提出了GIOU，并且相比于IOU Loss实现了不错的效果，一定程度上缓解了非重叠框之间梯度为0的情况--
-<a href = "">视频讲解。</a></p>
+<a href = "https://www.bilibili.com/video/BV1YBeGeNEtX/?vd_source=b2eaaddb2c69bf42517a2553af8444ab">视频讲解。</a></p>
 
 <a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/143466301" >二十一.M2Det算法详解</a><p>提出目的：特征金字塔受到了很大的关注，并且在很多论文中都得到了应用，以此来避免引起的尺度变化问题。虽然之前的方法在引入特征金字塔时带来了性能的提升，但是他们仅仅只是简化并且是以固有的尺度去构建结构。提出方法：M2Det提出了更加有效的特征金字塔结构检测不同尺度的物体。具体方法是首先融合了来自backbone多层特征得到基准特征，其次是将基准输入到TUM（Thinned U-shape Modules）和FFM（Feature Fusion Modules）模块，并且最后将每一个TUM的解码层输出层相同尺度构建一个特征金字塔。
-<a href = "">视频讲解。</a></p>
+<a href = "https://www.bilibili.com/video/BV1YBeGeNEtX/?vd_source=b2eaaddb2c69bf42517a2553af8444ab">视频讲解。</a></p>
 
 <a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/143477078" >二十二.DIOU算法详解</a><p>提出目的：目标检测领域除了正确预测物体之外，其中对物体的正确定位也是非常重要的，在已经存在的目标检测方法中，对于坐标框的回归一般都是𝑙𝑛l_n损失，但是并没有用于验证评估，比如使用IOU作为预测框的评估。其中IOU Loss和GIOU Loss已经被提出用于IOU评估，但是任然存在收敛慢和不能正确定位问题。提出方法：本文提出DIOU（Distance-IOU）Loss作为预测框和真实框之间距离的评估，相比于IOU Loss和GIOU损失收敛更快，并且本文还总结了影响坐标框回归的三个因素，①重叠面积②中心点距离③预测 box和真实box的比率大小，基于此还提出了一个CIOU（Complete-IOU） Loss，而且收敛更快和最终的性能更好。
-<a href = "">视频讲解。</a></p>
+<a href = "https://www.bilibili.com/video/BV1YBeGeNEtX/?vd_source=b2eaaddb2c69bf42517a2553af8444ab">视频讲解。</a></p>
 
 <a text-decoration="none" href = "" ></a><p>
 <a href = "">视频讲解。</a></p>
