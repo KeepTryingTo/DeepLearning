@@ -63,14 +63,36 @@
 <a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/143477078" >二十二.DIOU算法详解</a><p>提出目的：目标检测领域除了正确预测物体之外，其中对物体的正确定位也是非常重要的，在已经存在的目标检测方法中，对于坐标框的回归一般都是𝑙𝑛l_n损失，但是并没有用于验证评估，比如使用IOU作为预测框的评估。其中IOU Loss和GIOU Loss已经被提出用于IOU评估，但是任然存在收敛慢和不能正确定位问题。提出方法：本文提出DIOU（Distance-IOU）Loss作为预测框和真实框之间距离的评估，相比于IOU Loss和GIOU损失收敛更快，并且本文还总结了影响坐标框回归的三个因素，①重叠面积②中心点距离③预测 box和真实box的比率大小，基于此还提出了一个CIOU（Complete-IOU） Loss，而且收敛更快和最终的性能更好。
 <a href = "https://www.bilibili.com/video/BV1YBeGeNEtX/?vd_source=b2eaaddb2c69bf42517a2553af8444ab">视频讲解。</a></p>
 
-<a text-decoration="none" href = "" ></a><p>
+<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/143724189?sharetype=blogdetail&sharerId=143724189&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >二十三.论文Pelee: A Real-Time Object Detection System on Mobile Devices详解（代码详解）</a><p>提出目的：目前已经有大量轻量化模型被提出，比如MobileNet，shuffleNet以及MobileNetv2等模型，这些模型大部分都依赖深度可分离卷积，但是这个深度可分离卷积在深度学习框架并没有被有效的使用。提出方法：本文基于传统的卷积提出一个有效的网络架构PeleeNet， PeleeNet 网络模型具体包含Dense Layer，Stem Block以及Transition Layer层；并且基于PeleeNet 网络对SSD算法进行优化处理，包含特征图的选择，残差模块和小的卷积核，最后在PASCAL VOC上的测试结果为76.4%的MAP。
+<a href = "https://www.bilibili.com/video/BV1YBeGeNEtX?vd_source=b2eaaddb2c69bf42517a2553af8444ab&spm_id_from=333.788.videopod.episodes&p=20">视频讲解。</a></p>
+
+<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/143804612?sharetype=blogdetail&sharerId=143804612&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >二十四.论文DSOD: Learning Deeply Supervised Object Detectors from Scratch详解（代码详解）</a><p>提出目的：当前最好的目标检测算法都是基于预训练模型来进行训练的，比如像SSD算法是基于预训练的VGG16来训练backbone的，尽管通过微调的方式一定程度缓解从头开始训练的问题，那如果没有这些在大规模数据集上训练的预训练模型该怎么办呢？并且这些预训练模型很可能和我们自己的任务大不相关。因此，这篇论问基于这个问题提出从头开始训练自己的目标检测模型。提出方法：基于上面出现的现象，作者提出DSOD从头开始训练自己的模型，由于之前复杂的损失函数和有限的训练数据集，导致训练过程很容易失败，因此文本提出从头开始训练模型的一系列方法，这篇文章提出的关键方法就是采用密集连接进行模型的深度监督训练（有监督训练）（基于SSD框架）。
+<a href = "https://www.bilibili.com/video/BV1YBeGeNEtX?vd_source=b2eaaddb2c69bf42517a2553af8444ab&spm_id_from=333.788.videopod.episodes&p=22">视频讲解。</a></p>
+
+<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/143664068?sharetype=blogdetail&sharerId=143664068&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >二十五.目标检测数据集COCO的MAP评价指标工具pycocotools用于VOC或者自定义类别数据集的MAP计算以及类别的AP结果展现（代码详解）</a><p> 我们都知道目标检测领域有自己的评价指标MAP，表示计算每个类别上的AP（Average Precision）的结果，最后求取平均值得到MAP。但是像COCO大型的目标检测数据集有自己的MAP评价工具pycocotools，由于COCO是80个类别，如果要将这个工具应用到自己的领域，比如自定义了各个类别的数据集或者像20个类别VOC数据集，该怎么做呢？
+<a href = "https://www.bilibili.com/video/BV1YBeGeNEtX?vd_source=b2eaaddb2c69bf42517a2553af8444ab&spm_id_from=333.788.videopod.episodes&p=15">视频讲解。</a></p>
+
+
+<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/143666412?sharetype=blogdetail&sharerId=143666412&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >二十六.论文Soft-NMS– Improving Object Detection With One Line of Code 详解</a><p>提出目的：目标检测算法中的后处理部分使用NMS对重叠的框进行过滤，对于相同类别的重叠部分的框，置信度最高的将被保留，和最高置信度IOU大于指定阈值的将被过滤掉，但是这样存在一个问题，就是确实存在两个相同类别的物体靠的很近，那么导致检测的框很大部分会重叠，那么使用NMS算法进行过滤将导致其中一个框被过滤掉，这并不是我们想要的。提出方法：本文提出Soft-NMS算法，对于和最高置信度IOU大于指定阈值的那些框，对其置信度进行一定的微调，然后再过滤掉那些置信度低于指定阈值的box。
+<a href = "https://www.bilibili.com/video/BV1YBeGeNEtX?vd_source=b2eaaddb2c69bf42517a2553af8444ab&spm_id_from=333.788.videopod.episodes&p=16">视频讲解。</a></p>
+
+<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/143696667?sharetype=blogdetail&sharerId=143696667&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >二十七.论文Single-Shot Refinement Neural Network for Object Detection 详解（代码详解）</a><p>
+<a href = "https://www.bilibili.com/video/BV1YBeGeNEtX?vd_source=b2eaaddb2c69bf42517a2553af8444ab&spm_id_from=333.788.videopod.episodes&p=17">视频讲解。</a></p>
+
+<a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/143667298" >二十八.论文Scale-Transferrable Object Detection 详解（代码详解）</a><p>提出目的：尺度问题一直是目标检测领域的核心，因为图像或者视频中的物体大小总是不一致的，有大有小，并且有些物体占据的像素特别多，而有的物体占据像素特别少，为了解决这个问题，相关论文也提出了很多算法。
+提出方法：提出了尺度变换的目标检测网络，用于多尺度目标的检测。相比于之前的方法，本文提出的方法简化了联合来自不同层多尺度目标的预测。提出的尺度转换模块等同于超分辨率模块，探索了中间尺度一致性，同时也自然的实现跨尺度。最终采用DenseNet作为backbone，尺度转换模块添加到backbone网络最后输出，并且没有带来大的计算量。
 <a href = "">视频讲解。</a></p>
+
+
+<a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/143508021" >二十九.论文Parallel Feature Pyramid Network for Object Detection 详解（包含代码详解）</a><p>提出目的：最近提出的目标检测方法使用特征金字塔替换了原有的图像金字塔方式，但是目前提出的不同特征层方法限制了其模型的检测表现，为了在应用特征金字塔的同时提升模型性能，本文提出了并行的特征金字塔检测框架。提出方法：本文提出了并行的特征金字塔网络结构，通过拓宽网络模型结构而不是网络模型的深度而构建特征金字塔；首先是应用空间金字塔池化操作和一些额外的特征转换操作生成不同尺度的池化特征图；其次是在并行的特征金字塔模块生成相似语义特征图的特征层；最后是缩放这些池化的特征图到统一大小，并融合统一大小的特征图上下文信息得到最后的特征图。
+<a href = "https://www.bilibili.com/video/BV1YBeGeNEtX?vd_source=b2eaaddb2c69bf42517a2553af8444ab&p=18&spm_id_from=333.788.videopod.episodes">视频讲解。</a></p>
 
 <a text-decoration="none" href = "" ></a><p>
 <a href = "">视频讲解。</a></p>
 
 <a text-decoration="none" href = "" ></a><p>
 <a href = "">视频讲解。</a></p>
+
 
 
 
