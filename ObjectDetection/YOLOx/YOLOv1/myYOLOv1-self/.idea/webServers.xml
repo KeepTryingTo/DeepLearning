@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="554e765e-7700-42ec-9490-3a73305afc23" name="YOLO" url="http://10.16.56.62">
+        <fileTransfer accessType="SFTP" host="10.16.56.62" port="8989" sshConfigId="e65b1038-d179-4b81-ad34-de84118b3c15" sshConfig="ff@10.16.56.62:8989 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="673c0780-d486-4588-b8bb-16a9394b803b" name="yolov1">
+        <fileTransfer accessType="SFTP" host="10.16.56.62" port="8989" sshConfigId="e65b1038-d179-4b81-ad34-de84118b3c15" sshConfig="ff@10.16.56.62:8989 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

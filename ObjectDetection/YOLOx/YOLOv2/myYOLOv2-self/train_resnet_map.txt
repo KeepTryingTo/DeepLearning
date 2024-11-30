@@ -1,0 +1,22 @@
+---start evaluate---
+---class aeroplane ap 0.6603775287949606---
+---class bicycle ap 0.45700120555026674---
+---class bird ap 0.5779910831706517---
+---class boat ap 0.41490854502313035---
+---class bottle ap 0.18635221820672426---
+---class bus ap 0.5712462754712637---
+---class car ap 0.45202582207907993---
+---class cat ap 0.8034779332342352---
+---class chair ap 0.23213594691404885---
+---class cow ap 0.4233340429151745---
+---class diningtable ap 0.2854871476845017---
+---class dog ap 0.6990211711282428---
+---class horse ap 0.623254665054821---
+---class motorbike ap 0.5114918070599188---
+---class person ap 0.4779051188126834---
+---class pottedplant ap 0.29296959808352474---
+---class sheep ap 0.4348834549082843---
+---class sofa ap 0.3800378429100667---
+---class train ap 0.8092516986035968---
+---class tvmonitor ap 0.39382043119320664---
+---map 0.4843486768399191---
