@@ -112,8 +112,33 @@
 <a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/144095444?sharetype=blogdetail&sharerId=144095444&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >三十六.论文FaceBoxes: A CPU Real-time Face Detector with High Accuracy详解（代码）</a><p>提出目的：当前的很多人脸检测算法一般会采用比较大的下采样步长，因为大部分人脸的尺度都比较小，但是目前最大的挑战是实现一个实时并且在CPU上运行的人脸检测算法。提出方法：为了解决上面提到的挑战，本文提出了FaceBoxes人脸检测框架，在速度和准确率上效果都不错。具体方法是：设计一个轻量化的网络模型，包含了RDCL（Rapidly Digested Convolutional Layer）和MSCL（Multiple Scale Convolutional Layers）两个模块。其中RDCL旨在使Face Boxes在CPU上实现实时速度。MSCL旨在丰富不同层次的感受野和离散anchor，以处理不同尺度的面孔。此外，本文提出了一种新的anchor致密化策略，使不同类型的锚点在图像上具有相同的密度，显著提高了小人脸的召回率。
 <a href = "https://www.bilibili.com/video/BV1YBeGeNEtX/?vd_source=b2eaaddb2c69bf42517a2553af8444ab">视频讲解。</a></p>
 
-<a text-decoration="none" href = "" ></a><p>
-<a href = "https://www.bilibili.com/video/BV1YBeGeNEtX/?vd_source=b2eaaddb2c69bf42517a2553af8444ab">视频讲解。</a></p>
+<a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/144344922" >三十七.论文DenseBox: Unifying Landmark Localization with End to End Object Detection讲解</a>
+
+<a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/144347288" >三十八. 论文SqueezeDet详解</a><p></p>
+
+<a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/144395120" >三十九.论文ObjectBox: From Centers to Boxes for Anchor-Free Object Detection详解</a><p></p>
+
+<a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/144410277" >四十.论文YOLO5Face: Why Reinventing a Face Detector详解</a><p></p>
+
+
+<a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/144428990" >四十一.论文YOLO-FaceV2: A Scale and Occlusion Aware Face Detector详解</a><p></p>
+
+
+<a text-decoration="none" href = "" >四十二.</a><p></p>
+
+<a text-decoration="none" href = "" >四十三.</a><p></p>
+
+<a text-decoration="none" href = "" >四十四.</a><p></p>
+
+<a text-decoration="none" href = "" >四十五.</a><p></p>
+
+<a text-decoration="none" href = "" >四十六.</a><p></p>
+
+<a text-decoration="none" href = "" >四十七.</a><p></p>
+
+<a text-decoration="none" href = "" >四十八.</a><p></p>
+
+<a text-decoration="none" href = "" >四十九.</a><p></p>
 
 
 
