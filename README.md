@@ -124,22 +124,28 @@
 <a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/144428990" >四十一.论文YOLO-FaceV2: A Scale and Occlusion Aware Face Detector详解</a><p></p>
 
 
-<a text-decoration="none" href = "" >四十二.</a><p></p>
+<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/144457921?sharetype=blogdetail&sharerId=144457921&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >四十二.论文Training-Time-Friendly Network for Real-Time Object Detection详解</a><p></p>
 
-<a text-decoration="none" href = "" >四十三.</a><p></p>
+<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/144277155?sharetype=blogdetail&sharerId=144277155&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >四十三.论文EfficientDet: Scalable and Efficient Object Detection详解（代码详解）</a><p></p>
 
-<a text-decoration="none" href = "" >四十四.</a><p></p>
+<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/142817617?sharetype=blogdetail&sharerId=142817617&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >四十四.我真的对anchor-base & anchor-free了解吗？（目标检测算法Faster-RCNN，YOLO系列，SSD，CornerNet，FCOS，EfficientDet等）</a><p></p>
 
-<a text-decoration="none" href = "" >四十五.</a><p></p>
+<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/144287632?sharetype=blogdetail&sharerId=144287632&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >四十五.论文Focal Loss for Dense Object Detection详解</a><p></p>
 
-<a text-decoration="none" href = "" >四十六.</a><p></p>
+<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/144179082?sharetype=blogdetail&sharerId=144179082&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >四十六.论文Objects as Points详解</a><p></p>
 
-<a text-decoration="none" href = "" >四十七.</a><p></p>
+<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/144247492?sharetype=blogdetail&sharerId=144247492&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >四十七.论文PyramidBox: A Context-assisted Single Shot Face Detector详解（代码详解）</a><p></p>
 
-<a text-decoration="none" href = "" >四十八.</a><p></p>
+<a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/144269518" >四十八.论文RetinaFace: Single-stage Dense Face Localisation in the Wild详解</a><p></p>
 
 <a text-decoration="none" href = "" >四十九.</a><p></p>
 
+<a text-decoration="none" href = "" >五十.</a><p></p>
 
+<a text-decoration="none" href = "" >五十一.</a><p></p>
+
+<a text-decoration="none" href = "" >五十二.</a><p></p>
+
+<a text-decoration="none" href = "" >五十三.</a><p></p>
 
 
