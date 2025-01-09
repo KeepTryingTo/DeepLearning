@@ -138,14 +138,32 @@
 
 <a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/144269518" >四十八.论文RetinaFace: Single-stage Dense Face Localisation in the Wild详解</a><p></p>
 
-<a text-decoration="none" href = "" >四十九.</a><p></p>
+<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/144587932?sharetype=blogdetail&sharerId=144587932&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >四十九.论文 SIoU Loss: More Powerful Learning for Bounding Box Regression 详解（代码详解）</a><p></p>
 
-<a text-decoration="none" href = "" >五十.</a><p></p>
+<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/143371933?sharetype=blogdetail&sharerId=143371933&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >五十.目标检测算法中的MAP计算方式以及代码详解</a><p></p>
 
-<a text-decoration="none" href = "" >五十一.</a><p></p>
+<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/144833391?sharetype=blogdetail&sharerId=144833391&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >五十一.文GridMask Data Augmentation详解</a><p></p>
 
-<a text-decoration="none" href = "" >五十二.</a><p></p>
+<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/144931673?sharetype=blogdetail&sharerId=144931673&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >五十二.论文DiCENet: Dimension-wise Convolutions for Efficient Networks详解</a><p></p>
 
-<a text-decoration="none" href = "" >五十三.</a><p></p>
+<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/144912083?sharetype=blogdetail&sharerId=144912083&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >五十三.论文ESPNetv2: A Light-weight, Power Efficient, and General Purpose Convolutional Neural Network详解</a><p></p>
+
+<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/144884736?sharetype=blogdetail&sharerId=144884736&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >五十四.论文ESPNet: Efficient Spatial Pyramid of Dilated Convolutions for Semantic Segmentation详解</a><p></p>
+
+<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/144610854?sharetype=blogdetail&sharerId=144610854&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >五十五.论文Augmentation for small object detection详解（代码详解）</a><p></p>
+
+<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/144633037?sharetype=blogdetail&sharerId=144633037&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >五十六.论文YOLOX:Exceeding YOLO Series in 2021详解</a><p></p>
+
+<a text-decoration="none" href = "" >五十七.</a><p></p>
+<a text-decoration="none" href = "" >五十八.</a><p></p>
+
+<a text-decoration="none" href = "" >五十九.</a><p></p>
+
+<a text-decoration="none" href = "" >六十.</a><p></p>
+
+<a text-decoration="none" href = "" >六十一.</a><p></p>
+
+<a text-decoration="none" href = "" >；六十二.</a><p></p>
+<a text-decoration="none" href = "" >六十三.</a><p></p>
 
 
