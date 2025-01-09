@@ -1,0 +1,35 @@
+CONFIG_NAME: 'coco'
+dataset_name: 'coco'
+data_dir: '../data/coco'
+
+imsize: 256
+z_dim: 100
+cond_dim: 512
+manual_seed: 100
+cuda: True
+
+clip4evl: {'src':"clip", 'type':'ViT-B/32'}
+clip4trn: {'src':"clip", 'type':'ViT-B/32'} 
+clip4text: {'src':"clip", 'type':'ViT-B/32'} 
+
+stamp: 'normal'
+state_epoch: 0
+max_epoch: 3005
+batch_size: 16
+gpu_id: 0
+nf: 64
+ch_size: 3
+
+scaler_min: 64
+growth_interval: 2000
+lr_g: 0.0001
+lr_d: 0.0004
+sim_w: 4.0
+
+gen_interval: 1 #1
+test_interval: 5 #5
+save_interval: 5
+
+sample_times: 1
+npz_path: '../data/coco/npz/coco_val256_FIDK0.npz'
+log_dir: 'new'

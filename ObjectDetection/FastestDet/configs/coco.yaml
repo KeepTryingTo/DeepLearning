@@ -1,0 +1,18 @@
+DATASET:
+  TRAIN: "/home/ff/myProject/KGT/myProjects/myDataset/coco/yolo/train2014.txt"
+  VAL: "/home/ff/myProject/KGT/myProjects/myDataset/coco/yolo/val2014.txt"
+  NAMES: "configs/coco.names"
+MODEL:
+  NC: 80
+  INPUT_WIDTH: 352
+  INPUT_HEIGHT: 352
+TRAIN:
+  LR: 0.00017
+  THRESH: 0.25
+  WARMUP: true
+  BATCH_SIZE: 16
+  END_EPOCH: 500
+  MILESTIONES:
+    - 100
+    - 200
+    - 250
