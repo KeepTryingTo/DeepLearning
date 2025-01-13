@@ -154,16 +154,32 @@
 
 <a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/144633037?sharetype=blogdetail&sharerId=144633037&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >五十六.论文YOLOX:Exceeding YOLO Series in 2021详解</a><p></p>
 
-<a text-decoration="none" href = "" >五十七.</a><p></p>
-<a text-decoration="none" href = "" >五十八.</a><p></p>
+<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/144331483?sharetype=blogdetail&sharerId=144331483&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >五十七.论文Rewrite the Stars详解</a><p></p>
 
-<a text-decoration="none" href = "" >五十九.</a><p></p>
+<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/144683705?sharetype=blogdetail&sharerId=144683705&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >五十八.数据集Birds/CUB_200_2011，CC3M和COCO用于文本到图像生成的数据细节介绍</a><p></p>
 
-<a text-decoration="none" href = "" >六十.</a><p></p>
+<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/144687606?sharetype=blogdetail&sharerId=144687606&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >五十九.论文GALIP: Generative Adversarial CLIPs for Text-to-Image Synthesis详解（代码详解）</a><p></p>
 
-<a text-decoration="none" href = "" >六十一.</a><p></p>
+<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/144710359?sharetype=blogdetail&sharerId=144710359&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >六十.论文DF-GAN: ASimple and Effective Baseline for Text-to-Image Synthesis详解</a><p></p>
 
-<a text-decoration="none" href = "" >；六十二.</a><p></p>
-<a text-decoration="none" href = "" >六十三.</a><p></p>
+<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/144692297?sharetype=blogdetail&sharerId=144692297&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >六十一.评估图像相似性的不同方法（包含代码实现）</a><p></p>
+
+<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/144799759?sharetype=blogdetail&sharerId=144799759&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >；六十二.论文YOLONano: aHighly Compact You Only Look Once Convolutional Neural Network for Object Detection详解</a><p></p>
+
+<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/144800090?sharetype=blogdetail&sharerId=144800090&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >六十三.论文Bag of Freebies for Training Object Detection Neural Networks详解</a><p></p>
+
+<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/144736709?sharetype=blogdetail&sharerId=144736709&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >六十四.论文StackGAN: Text to Photo-realistic Image Synthesis with Stacked Generative Adversarial Networks详解</a><p></p>
+
+<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/145050904?sharetype=blogdetail&sharerId=145050904&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >六十五.论文CSPNet详解</a><p></p>
+
+<a text-decoration="none" href = "" >六十六.</a><p></p>
+
+<a text-decoration="none" href = "" >六十七.</a><p></p>
+
+<a text-decoration="none" href = "" >六十八.</a><p></p>
+
+<a text-decoration="none" href = "" >；六十九.</a><p></p>
+
+<a text-decoration="none" href = "" >七十.</a><p></p>
 
 
