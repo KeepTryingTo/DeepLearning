@@ -172,14 +172,34 @@
 
 <a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/145050904?sharetype=blogdetail&sharerId=145050904&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >六十五.论文CSPNet详解</a><p></p>
 
-<a text-decoration="none" href = "" >六十六.</a><p></p>
+<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/144865316?sharetype=blogdetail&sharerId=144865316&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >六十六.论文FCHD: Fast and accurate head detection in crowded scenes详解</a><p></p>
 
-<a text-decoration="none" href = "" >六十七.</a><p></p>
+<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/145082631?sharetype=blogdetail&sharerId=145082631&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >六十七.论文Bounding Box Regression with Uncertainty for Accurate Object Detection详解</a><p></p>
 
-<a text-decoration="none" href = "" >六十八.</a><p></p>
+<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/145035206?sharetype=blogdetail&sharerId=145035206&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >六十八.论文Gaussian YOLOv3详解</a><p></p>
 
-<a text-decoration="none" href = "" >；六十九.</a><p></p>
+<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/145037149?sharetype=blogdetail&sharerId=145037149&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >六十九.论文YOLO-MS详解</a><p></p>
 
-<a text-decoration="none" href = "" >七十.</a><p></p>
+<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/145221557?sharetype=blogdetail&sharerId=145221557&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >七十.论文GhostNetV2详解以及算法实现</a><p></p>
+
+<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/145206238?sharetype=blogdetail&sharerId=145206238&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >七十一.论文GhostNet: More Features from Cheap Operations详解</a><p></p>
+
+<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/145182013?sharetype=blogdetail&sharerId=145182013&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >七十二.论文YOLOv4: Optimal Speed and Accuracy of Object Detection详解</a><p></p>
+
+<a text-decoration="none" href = "" >七十三.</a><p></p>
+
+<a text-decoration="none" href = "" >七十四.</a><p></p>
+
+<a text-decoration="none" href = "" >七十五.</a><p></p>
+
+<a text-decoration="none" href = "" >七十六.</a><p></p>
+
+<a text-decoration="none" href = "" >七十七.</a><p></p>
+
+<a text-decoration="none" href = "" >七十八.</a><p></p>
+
+<a text-decoration="none" href = "" >七十九.</a><p></p>
+
+<a text-decoration="none" href = "" >八十.</a><p></p>
 
 
