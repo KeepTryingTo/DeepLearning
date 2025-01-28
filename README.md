@@ -186,20 +186,40 @@
 
 <a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/145182013?sharetype=blogdetail&sharerId=145182013&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >七十二.论文YOLOv4: Optimal Speed and Accuracy of Object Detection详解</a><p></p>
 
-<a text-decoration="none" href = "" >七十三.</a><p></p>
+<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/144664168?sharetype=blogdetail&sharerId=144664168&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >七十三.论文CFENet: An Accurate and Efficient Single-Shot Object Detector for Autonomous Driving详解（代码详解）</a><p></p>
 
-<a text-decoration="none" href = "" >七十四.</a><p></p>
+<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/145342832?sharetype=blogdetail&sharerId=145342832&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >七十四.论文HDGAN（Photographic Text-to-Image Synthesis with a Hierarchically-nested Adversarial Network）详解</a><p></p>
 
-<a text-decoration="none" href = "" >七十五.</a><p></p>
+<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/144634647?sharetype=blogdetail&sharerId=144634647&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >七十五.论文Deformable DETR: Deformable transformers for END-TO-END Object Detection讲解</a><p></p>
 
-<a text-decoration="none" href = "" >七十六.</a><p></p>
+<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/145321171?sharetype=blogdetail&sharerId=145321171&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >七十六.论文StackGAN++详解</a><p></p>
 
-<a text-decoration="none" href = "" >七十七.</a><p></p>
+<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/144487088?sharetype=blogdetail&sharerId=144487088&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >七十七.论文DETRs Beat YOLOs on Real-time Object Detection（RT-DETR_v1&RT-DETR_v2）详解</a><p></p>
 
-<a text-decoration="none" href = "" >七十八.</a><p></p>
+<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/144469840?sharetype=blogdetail&sharerId=144469840&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >七十八.论文End-to-End Object Detection with Transformers详解</a><p></p>
 
-<a text-decoration="none" href = "" >七十九.</a><p></p>
+<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/143725261?sharetype=blogdetail&sharerId=143725261&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >七十九.论文Tiny-DSOD: Lightweight Object Detection for Resource-Restricted Usages详解（代码详解）</a><p></p>
 
 <a text-decoration="none" href = "" >八十.</a><p></p>
+
+<a text-decoration="none" href = "" >八十一.</a><p></p>
+
+<a text-decoration="none" href = "" >八十二.</a><p></p>
+
+<a text-decoration="none" href = "" >八十三.</a><p></p>
+
+<a text-decoration="none" href = "" >八十四.</a><p></p>
+
+<a text-decoration="none" href = "" >八十五.</a><p></p>
+
+<a text-decoration="none" href = "" >八十六.</a><p></p>
+
+<a text-decoration="none" href = "" >八十七.</a><p></p>
+
+<a text-decoration="none" href = "" >八十八.</a><p></p>
+
+<a text-decoration="none" href = "" >八十九.</a><p></p>
+
+<a text-decoration="none" href = "" >九十.</a><p></p>
 
 
