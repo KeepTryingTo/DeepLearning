@@ -9,6 +9,7 @@ import cv2
 
 import scipy.ndimage
 import  shutil
+import imageio
 import scipy.misc as misc
 
 
@@ -65,8 +66,9 @@ def imresize_shape(img, outshape):
     img = img.astype(np.float32)
     outshape = ( int(outshape[1]) , int(outshape[0])  )
     
-    #temp = cv2.resize(img, outshape).astype(float)
-    temp = misc.imresize(img, size=outshape, interp='bilinear').astype(float)
+    temp = cv2.resize(img, outshape).astype(float)
+    # temp = misc.imresize(img, size=outshape, interp='bilinear').astype(float)
+    # temp = imageio.imread(img).astype(float)
 
     if len(img.shape) == 3 and img.shape[2] == 1:
         temp = np.reshape(temp, temp.shape + (1,))
