@@ -19,8 +19,12 @@ class condEmbedding(nn.Module):
 
     def sample_encoded_context(self, mean, logsigma, kl_loss=False):
     
-        epsilon = Variable(torch.cuda.FloatTensor(mean.size()).normal_())
+        # epsilon = Variable(torch.cuda.FloatTensor(mean.size()).normal_())
+        # print('epsion.size: {}'.format(epsilon.size())) # torch.Size([1, 128])
         stddev  = logsigma.exp()
+
+        epsilon = torch.FloatTensor(mean.size()).normal_().to(mean.device)
+        # print('epsion.size: {}'.format(epsilon.size()))
         
         return epsilon.mul(stddev).add_(mean)
 
