@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="7343d5b7-a42e-44fd-82d5-1cf584d5d537" name="tiny_DSOD">
+        <fileTransfer accessType="SFTP" host="10.16.8.179" port="22" sshConfigId="2ba83178-f926-4d36-b9ae-b3e3ae873e19" sshConfig="ff@10.16.8.179:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
