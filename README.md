@@ -164,7 +164,7 @@
 
 <a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/144692297?sharetype=blogdetail&sharerId=144692297&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >六十一.评估图像相似性的不同方法（包含代码实现）</a><p></p>
 
-<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/144799759?sharetype=blogdetail&sharerId=144799759&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >；六十二.论文YOLONano: aHighly Compact You Only Look Once Convolutional Neural Network for Object Detection详解</a><p></p>
+<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/144799759?sharetype=blogdetail&sharerId=144799759&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >六十二.论文YOLONano: aHighly Compact You Only Look Once Convolutional Neural Network for Object Detection详解</a><p></p>
 
 <a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/144800090?sharetype=blogdetail&sharerId=144800090&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >六十三.论文Bag of Freebies for Training Object Detection Neural Networks详解</a><p></p>
 
@@ -200,9 +200,9 @@
 
 <a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/143725261?sharetype=blogdetail&sharerId=143725261&sharerefer=PC&sharesource=Keep_Trying_Go&spm=1011.2480.3001.8118" >七十九.论文Tiny-DSOD: Lightweight Object Detection for Resource-Restricted Usages详解（代码详解）</a><p></p>
 
-<a text-decoration="none" href = "" >八十.</a><p></p>
+<a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/145477687" >八十.论文Generative Adversarial Text to Image Synthesis详解</a><p></p>
 
-<a text-decoration="none" href = "" >八十一.</a><p></p>
+<a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/145403674" >八十一.文本和图像编码器（AttnGAN）详解</a><p></p>
 
 <a text-decoration="none" href = "" >八十二.</a><p></p>
 
