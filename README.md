@@ -204,9 +204,10 @@
 
 <a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/145403674" >八十一.文本和图像编码器（AttnGAN）详解</a><p></p>
 
-<a text-decoration="none" href = "" >八十二.</a><p></p>
+<a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/145645745" >八十二.论文MirrorGAN: Learning Text-to-image Generation by Redescription详解</a><p></p>
 
-<a text-decoration="none" href = "" >八十三.</a><p></p>
+<a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/145599629" >八十三.
+文本对图像的描述（MirrorGAN）</a><p></p>
 
 <a text-decoration="none" href = "" >八十四.</a><p></p>
 
