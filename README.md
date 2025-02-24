@@ -209,7 +209,7 @@
 <a text-decoration="none" href = "https://mydreamambitious.blog.csdn.net/article/details/145599629" >八十三.
 文本对图像的描述（MirrorGAN）</a><p></p>
 
-<a text-decoration="none" href = "" >八十四.</a><p></p>
+<a text-decoration="none" href = "https://blog.csdn.net/Keep_Trying_Go/article/details/145825369" >八十四.论文RATLIP文本到图像生成详解</a><p></p>
 
 <a text-decoration="none" href = "" >八十五.</a><p></p>
 
