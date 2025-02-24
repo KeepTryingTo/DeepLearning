@@ -1,0 +1,35 @@
+CONFIG_NAME: 'flower'
+dataset_name: 'flower'
+data_dir: '../data/flower'
+
+imsize: 256
+z_dim: 100
+cond_dim: 512
+manual_seed: 100
+cuda: True
+
+clip4evl: {'src':"clip", 'type':'ViT-B/32'}
+clip4trn: {'src':"clip", 'type':'ViT-B/32'} 
+clip4text: {'src':"clip", 'type':'ViT-B/32'} 
+
+stamp: 'normal'
+state_epoch: 275
+max_epoch: 1502
+batch_size: 4
+gpu_id: 0
+nf: 64
+ch_size: 3
+
+scaler_min: 64
+growth_interval: 2000
+lr_g: 0.0001 # 0.0001
+lr_d: 0.0004
+sim_w: 4.0
+
+gen_interval: 5 #1
+test_interval: 5 #5
+save_interval: 5
+
+sample_times: 12
+npz_path: '../data/flower/npz/flower_val256_FIDK0.npz'
+log_dir: 'new'

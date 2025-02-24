@@ -1,0 +1,104 @@
+!!python/object/new:easydict.EasyDict
+dictitems:
+  CONFIG_NAME: bird
+  batch_size: 1
+  cfg_file: ../cfg/birds.yml
+  ch_size: 3
+  clip4evl: &id001 !!python/object/new:easydict.EasyDict
+    dictitems:
+      src: clip
+      type: ViT-B/32
+    state:
+      src: clip
+      type: ViT-B/32
+  clip4text: &id002 !!python/object/new:easydict.EasyDict
+    dictitems:
+      src: clip
+      type: ViT-B/32
+    state:
+      src: clip
+      type: ViT-B/32
+  clip4trn: &id003 !!python/object/new:easydict.EasyDict
+    dictitems:
+      src: clip
+      type: ViT-B/32
+    state:
+      src: clip
+      type: ViT-B/32
+  cond_dim: 512
+  cuda: true
+  data_dir: D:/conda3/Transfer_Learning/GANDatasets/birds
+  dataset_name: birds
+  device: &id004 !!python/object/apply:torch.device
+  - cuda
+  gen_interval: 5
+  gpu_id: 0
+  growth_interval: 2000
+  img_save_dir: D:\conda3\Transfer_Learning\GANs\RATLIP-main\codes\imgs/bird\train\RATLIP_nf64_normal_bird_256_2024_06_14_19_51_50
+  imsize: 256
+  local_rank: -1
+  log_dir: new
+  lr_d: 0.0004
+  lr_g: 0.0001
+  manual_seed: 100
+  max_epoch: 1502
+  mixed_precision: false
+  model: RATLIP
+  model_save_file: D:\conda3\Transfer_Learning\GANs\RATLIP-main\codes\saved_models\bird\RATLIP_nf64_normal_bird_256_2024_06_14_19_51_50
+  multi_gpus: false
+  nf: 64
+  npz_path: D:/conda3/Transfer_Learning/GANDatasets/birds/npz/bird_val256_FIDK0.npz
+  num_workers: 0
+  pretrained_model_path: model
+  random_sample: true
+  sample_times: 12
+  save_interval: 20
+  scaler_min: 64
+  sim_w: 4.0
+  stamp: normal
+  state_epoch: 1
+  test_interval: 20
+  train: true
+  z_dim: 100
+state:
+  CONFIG_NAME: bird
+  batch_size: 1
+  cfg_file: ../cfg/birds.yml
+  ch_size: 3
+  clip4evl: *id001
+  clip4text: *id002
+  clip4trn: *id003
+  cond_dim: 512
+  cuda: true
+  data_dir: D:/conda3/Transfer_Learning/GANDatasets/birds
+  dataset_name: birds
+  device: *id004
+  gen_interval: 5
+  gpu_id: 0
+  growth_interval: 2000
+  img_save_dir: D:\conda3\Transfer_Learning\GANs\RATLIP-main\codes\imgs/bird\train\RATLIP_nf64_normal_bird_256_2024_06_14_19_51_50
+  imsize: 256
+  local_rank: -1
+  log_dir: new
+  lr_d: 0.0004
+  lr_g: 0.0001
+  manual_seed: 100
+  max_epoch: 1502
+  mixed_precision: false
+  model: RATLIP
+  model_save_file: D:\conda3\Transfer_Learning\GANs\RATLIP-main\codes\saved_models\bird\RATLIP_nf64_normal_bird_256_2024_06_14_19_51_50
+  multi_gpus: false
+  nf: 64
+  npz_path: D:/conda3/Transfer_Learning/GANDatasets/birds/npz/bird_val256_FIDK0.npz
+  num_workers: 0
+  pretrained_model_path: model
+  random_sample: true
+  sample_times: 12
+  save_interval: 20
+  scaler_min: 64
+  sim_w: 4.0
+  stamp: normal
+  state_epoch: 1
+  test_interval: 20
+  train: true
+  z_dim: 100
