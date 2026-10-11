@@ -1,0 +1,34 @@
+project_name: VOC  # also the folder name of the dataset that under data_path folder
+year: 2012
+num_gpus: 0
+
+# mean and std in RGB order, actually this part should remain unchanged as long as your dataset is similar to coco.
+mean: [0.485, 0.456, 0.406]
+std: [0.229, 0.224, 0.225]
+
+# this is coco anchors, change it if necessary
+anchors_scales: '[2 ** 0, 2 ** (1.0 / 3.0), 2 ** (2.0 / 3.0)]'
+anchors_ratios: '[(1.0, 1.0), (1.4, 0.7), (0.7, 1.4)]'
+
+obj_list : [
+  'aeroplane',
+  'bicycle',
+  'bird',
+  'boat',
+  'bottle',
+  'bus',
+  'car',
+  'cat',
+  'chair',
+  'cow',
+  'diningtable',
+  'dog',
+  'horse',
+  'motorbike',
+  'person',
+  'pottedplant',
+  'sheep',
+  'sofa',
+  'train',
+  'tvmonitor'
+]

@@ -1,0 +1,10 @@
+train: /home/ff/myProject/KGT/myProjects/myProjects/YOLO-FaceV2-master/data/images  # 118287 images
+val: /home/ff/myProject/KGT/myProjects/myProjects/YOLO-FaceV2-master/data/images  # 5000 images
+# test: /home/ici/kkDocuments/VOCdevkit/WIDER_FACE/val.txt  # 20288 of 40670 images, submit to https://competitions.codalab.org/competitions/20794
+
+# number of classes
+nc: 1
+
+# class names
+names: [ 'face' ]
+

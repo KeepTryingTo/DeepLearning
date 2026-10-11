@@ -1,0 +1,42 @@
+CONFIG_NAME: bird
+
+dataset_name: birds
+data_dir: /home/ff/myProject/KGT/myProjects/myDataset/text2image/birds
+
+gpu_id: 0
+imsize: 256
+z_dim: 100
+cond_dim: 256
+manual_seed: 100
+cuda: True
+
+stamp: 'normal'
+state_epoch: 0
+max_epoch: 1301
+batch_size: 32
+nf: 32
+ch_size: 3
+
+model: base
+
+gen_interval: 5
+test_interval: 10
+save_interval: 5
+
+truncation: True
+trunc_rate: 0.88
+
+sample_times: 10
+npz_path: /home/ff/myProject/KGT/myProjects/myDataset/text2image/birds/npz/bird_val256_FIDK0.npz
+example_captions: ./example_captions/bird.txt
+samples_save_dir: /home/ff/myProject/KGT/myProjects/myProjects/DF-GAN-master/codes/samples_save/birds
+checkpoint: None
+
+save_image: False
+val_save_dir: /home/ff/myProject/KGT/myProjects/myProjects/DF-GAN-master/codes/vals/birds
+
+TEXT:
+    WORDS_NUM: 18
+    EMBEDDING_DIM: 256
+    CAPTIONS_PER_IMAGE: 10
+    DAMSM_NAME: /home/ff/myProject/KGT/myProjects/myDataset/text2image/birds/DAMSMencoder/text_encoder200.pth

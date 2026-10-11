@@ -1,0 +1,6 @@
+nms.c
+setup.py
+coco.egg-info/PKG-INFO
+coco.egg-info/SOURCES.txt
+coco.egg-info/dependency_links.txt
+coco.egg-info/top_level.txt

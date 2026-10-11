@@ -1,0 +1,45 @@
+
+train.txt
+class: aeroplane ---- number: 470
+class: bicycle ---- number: 410
+class: bird ---- number: 592
+class: boat ---- number: 508
+class: bottle ---- number: 749
+class: bus ---- number: 317
+class: car ---- number: 1191
+class: cat ---- number: 609
+class: chair ---- number: 1457
+class: cow ---- number: 355
+class: diningtable ---- number: 373
+class: dog ---- number: 768
+class: horse ---- number: 377
+class: motorbike ---- number: 375
+class: person ---- number: 5019
+class: pottedplant ---- number: 557
+class: sheep ---- number: 509
+class: sofa ---- number: 399
+class: train ---- number: 327
+class: tvmonitor ---- number: 412
+
+val.txt
+class: aeroplane ---- number: 484
+class: bicycle ---- number: 380
+class: bird ---- number: 629
+class: boat ---- number: 491
+class: bottle ---- number: 733
+class: bus ---- number: 320
+class: car ---- number: 1173
+class: cat ---- number: 618
+class: chair ---- number: 1449
+class: cow ---- number: 347
+class: diningtable ---- number: 374
+class: dog ---- number: 773
+class: horse ---- number: 373
+class: motorbike ---- number: 376
+class: person ---- number: 5110
+class: pottedplant ---- number: 542
+class: sheep ---- number: 485
+class: sofa ---- number: 387
+class: train ---- number: 329
+class: tvmonitor ---- number: 414
+

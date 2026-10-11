@@ -1,0 +1,68 @@
+---start evaluate---
+---class aeroplane ap 0.7277077437981478---
+---class bicycle ap 0.2302828968951548---
+---class bird ap 0.5602631836373648---
+---class boat ap 0.3269623074875494---
+---class bottle ap 0.08551596833960784---
+---class bus ap 0.5869539544099845---
+---class car ap 0.4642387857444424---
+---class cat ap 0.7927903643170652---
+---class chair ap 0.4128405207545954---
+---class cow ap 0.088724721006312---
+---class diningtable ap 0.28492985162292445---
+---class dog ap 0.7425861990251669---
+---class horse ap 0.22656111002322438---
+---class motorbike ap 0.26843069970758826---
+---class person ap 0.6694466945715019---
+---class pottedplant ap 0.033639348873084826---
+---class sheep ap 0.23418774742626536---
+---class sofa ap 0.07457591012800979---
+---class train ap 0.6451202586413538---
+---class tvmonitor ap 0.2618153038624731---
+---map 0.38587867851359087---
+
+---start evaluate---
+---class aeroplane ap 0.5988108149307878---
+---class bicycle ap 0.29510027125452964---
+---class bird ap 0.5149430505013854---
+---class boat ap 0.3479729492900207---
+---class bottle ap 0.14824141754669973---
+---class bus ap 0.4464735937544979---
+---class car ap 0.4973923201483455---
+---class cat ap 0.7380178651909122---
+---class chair ap 0.22305287656785822---
+---class cow ap 0.22973749887987935---
+---class diningtable ap 0.31964377320075843---
+---class dog ap 0.5950722966447854---
+---class horse ap 0.3124363505761937---
+---class motorbike ap 0.30273444658078374---
+---class person ap 0.508431175316765---
+---class pottedplant ap 0.1096961185966961---
+---class sheep ap 0.4130956491447252---
+---class sofa ap 0.2176208528138506---
+---class train ap 0.7031185381403815---
+---class tvmonitor ap 0.36454076044969497---
+---map 0.3943066309764775---
+
+---start evaluate---
+---class aeroplane ap 0.6018556675029949---
+---class bicycle ap 0.2772092240871601---
+---class bird ap 0.5361509943931785---
+---class boat ap 0.34074590692808693---
+---class bottle ap 0.12940472342875028---
+---class bus ap 0.44286923074944384---
+---class car ap 0.4873820368940255---
+---class cat ap 0.7511188641529156---
+---class chair ap 0.23567869456278667---
+---class cow ap 0.22322203518825084---
+---class diningtable ap 0.30557816738557436---
+---class dog ap 0.6023566311724259---
+---class horse ap 0.3652038909149671---
+---class motorbike ap 0.3066316013009247---
+---class person ap 0.4975940410615281---
+---class pottedplant ap 0.11674133518285985---
+---class sheep ap 0.3870929291190522---
+---class sofa ap 0.22367189672086144---
+---class train ap 0.6838813534372739---
+---class tvmonitor ap 0.33318732059263156---
+---map 0.3923788272387846---

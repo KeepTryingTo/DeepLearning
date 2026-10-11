@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>目标检测</title>
+    <style>
+        h1 {
+            display: block;
+            width: 200px;
+            height: 100px;
+            margin: auto;
+            color: cyan;
+            margin-top: 50px;
+        }
+        .container {
+            position: absolute;
+            width: 450px;
+            height: 100px;
+            margin-left: 560px;
+        }
+        .detectImage {
+            cursor: pointer;
+            position: relative;
+            width: 200px;
+            height: 50px;
+            color: coral;
+            font-size: 30px;
+        }
+        .detectTime {
+            cursor: pointer;
+            position: relative;
+            width: 200px;
+            height: 50px;
+            color: coral;
+            font-size: 30px;
+            margin-top: 50px;
+        }
+
+        /*.settings {*/
+        /*    position: relative;*/
+        /*    width: 500px;*/
+        /*    height: 500px;*/
+        /*    margin-left: 830px;*/
+        /*    border-radius: 5px;*/
+        /*    border: solid 3px cyan;*/
+        /*}*/
+
+        .slider-conf-container {
+            position: absolute;
+            width: 200px;
+            margin-top: -10px;
+            margin-left: 830px;
+            color: coral;
+        }
+        .slider-iou-container {
+            position: absolute;
+            width: 200px;
+            margin-top: 85px;
+            margin-left: 830px;
+            color: coral;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            color: coral;
+        }
+
+        #slider_conf_value {
+            display: block;
+            margin-top: -25px;
+            margin-left: 215px;
+            font-size: 20px;
+            color: coral;
+        }
+        #slider_iou_value {
+            display: block;
+            margin-top: -25px;
+            margin-left: 215px;
+            font-size: 20px;
+            color: coral;
+        }
+        #submit_confidence_button {
+            cursor: pointer;
+            margin-left: 830px;
+            margin-top: 20px;
+            width: 150px;
+            height: 30px;
+            font-size: 16px;
+            color: coral;
+        }
+        #submit_iou_button {
+            cursor: pointer;
+            margin-left: 830px;
+            margin-top: 65px;
+            width: 150px;
+            height: 30px;
+            font-size: 16px;
+            color: coral;
+        }
+        .select_model {
+            margin-top: 30px;
+            margin-left: 830px;
+            font-size: 20px;
+            color: coral;
+        }
+        #dropdown {
+            position: absolute;
+            height: 30px;
+            margin-top: -60px;
+            margin-left: 830px;
+            font-size: 20px;
+            color: coral;
+        }
+        #submit_modelName_button{
+            cursor: pointer;
+            position: absolute;
+            width: 70px;
+            height: 30px;
+            margin-left: 1070px;
+            margin-top: -60px;
+            color: coral;
+            font-size: 20px;
+        }
+        #cameraSelect {
+            display: block;
+            width: 50px;
+            height: 30px;
+            margin-top: -30px;
+            margin-left: 1070px;
+        }
+        .cameraLabel {
+            display: block;
+            margin-left: 830px;
+            font-size: 20px;
+            margin-bottom: 3px;
+            color: coral;
+        }
+    </style>
+</head>
+<body>
+    <h1>目标检测</h1>
+    <div class="container">
+        <form action="http://127.0.0.1:5000/image" method="POST">
+            <input class="detectImage" type="submit" name="detectImage" value="图像检测">
+        </form>
+        <form action="http://127.0.0.1:5000/video" method="POST">
+            <input class="detectTime" type="submit" name="detectTime" value="实时检测">
+        </form>
+    </div>
+
+    <div class="slider-conf-container">
+         <input type="range" id="slider_conf" name="slider_value" min="0" max="100" value="20">
+         <span id="slider_conf_value">0.20</span>
+    </div>
+
+    <div class="slider-iou-container">
+         <input type="range" id="slider_iou" name="slider_iou_value" min="0" max="100" value="45">
+         <span id="slider_iou_value">0.45</span>
+    </div>
+
+    <button id="submit_confidence_button">设置置信度阈值</button>
+    <button id="submit_iou_button">设置Iou阈值</button>
+
+    <h1 class="select_model">模型选择</h1>
+    <select id="dropdown">
+        <option value="ssdlite320_mobilenet_v3">ssdlite320 mobilenet v3</option>
+        <option value="ssd300_vgg16">ssd300 vgg16</option>
+        <option value="fcos_resnet50_fpn">fcos resnet50 fpn</option>
+        <option value="yolov5s">yolov5s</option>
+    </select>
+    <button id="submit_modelName_button">确定</button>
+
+    <label class="cameraLabel">视频设备选择</label><select id="cameraSelect"></select>
+<!--    autoplay 属性表示视频会在加载时自动播放-->
+    <video id="video" autoplay></video>
+
+    <script type ="text/javascript" src="../static/js/solider.js"></script>
+    <script type ="text/javascript" src="../static/js/select_model.js"></script>
+    <script type ="text/javascript" src="../static/js/select_camera.js"></script>
+</body>
+</html>

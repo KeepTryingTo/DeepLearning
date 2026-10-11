@@ -1,0 +1,8 @@
+---start evaluate---
+---class aeroplane ap 0.5004489766433562---
+---class bicycle ap 0.2318335144471015---
+---class bird ap 0.38446953980322085---
+---class boat ap 0.17705133666233192---
+---class bottle ap 0.01432642124413951---
+---class bus ap -1---
+---map 0.051354964800024994---

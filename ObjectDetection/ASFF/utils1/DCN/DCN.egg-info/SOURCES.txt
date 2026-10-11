@@ -1,0 +1,16 @@
+setup.py
+D:/conda3/Transfer_Learning/ObjectDetect/ASFF-master/utils1/DCN/src/vision.cpp
+D:/conda3/Transfer_Learning/ObjectDetect/ASFF-master/utils1/DCN/src/cpu/deform_conv2d_cpu.cpp
+D:/conda3/Transfer_Learning/ObjectDetect/ASFF-master/utils1/DCN/src/cpu/modulated_deform_conv2d_cpu.cpp
+D:/conda3/Transfer_Learning/ObjectDetect/ASFF-master/utils1/DCN/src/cuda/deform_conv2d_cuda.cu
+D:/conda3/Transfer_Learning/ObjectDetect/ASFF-master/utils1/DCN/src/cuda/modulated_deform_conv2d_cuda.cu
+DCN.egg-info/PKG-INFO
+DCN.egg-info/SOURCES.txt
+DCN.egg-info/dependency_links.txt
+DCN.egg-info/top_level.txt
+functions/__init__.py
+functions/deform_conv2d_func.py
+functions/modulated_deform_conv2d_func.py
+modules/__init__.py
+modules/deform_conv2d.py
+modules/modulated_deform_conv2d.py

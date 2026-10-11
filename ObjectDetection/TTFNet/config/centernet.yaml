@@ -1,0 +1,65 @@
+model_name: TTFNet
+
+
+data:
+  train_annotation_path: /home/ff/myProject/KGT/myProjects/myDataset/coco/captions/annotations/instances_train2014.json
+  val_annotation_path: /home/ff/myProject/KGT/myProjects/myDataset/coco/captions/annotations/instances_val2014.json
+  train_img_root: /home/ff/myProject/KGT/myProjects/myDataset/coco/train2014/train2014
+  val_img_root: /home/ff/myProject/KGT/myProjects/myDataset/coco/val2014/val2014
+  img_size: 512
+  use_crowd: False
+  batch_size: 16
+  num_workers: 8
+  debug: False
+  remove_blank: True
+
+
+
+model:
+  num_cls: 80
+  PIXEL_MEAN: [0.485, 0.456, 0.406]
+  PIXEL_STD: [0.229, 0.224, 0.225]
+  backbone: resnet34
+  DECONV_CHANNEL: [512, 256, 128, 64]
+  MODULATE_DEFORM: True
+  BIAS_VALUE: -2.19
+  cls_num_convs: 2
+  wh_num_convs: 2
+  freeze_bn: False
+  ## centernet_gt
+  alpha: 0.54
+  beta: 0.54
+  wh_planes: 4
+  down_ratio: 4
+  wh_area_process: 'log'
+  ## for TEST
+  max_per_img: 100
+  score_thr: 0.05
+
+
+
+hyper_params:
+  hm_weight: 1
+  wh_weight: 5.
+  multi_scale: [512]
+
+
+optim:
+  optimizer: Adam
+  lr: 0.0001
+  momentum: 0.9
+  milestones: [19,23]
+  cosine_weights: 1.0
+  warm_up_epoch: 1.
+  max_norm: 5
+  weight_decay: 0.0004
+  epochs: 25
+  sync_bn: True
+
+
+val:
+  interval: 1
+  weight_path: weights
+
+
+gpus: 1
